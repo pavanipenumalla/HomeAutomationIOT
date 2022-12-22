@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home</title>
+    <link rel="stylesheet" href="projectweb.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="script.js"></script>
+    <style>
+        body {
+            line-height: 1.6;
+            display: flex;
+            align-content: space-around;
+            flex-wrap: wrap;
+            flex-direction: column;
+            transition: all 1s;
+        }
+    </style>
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <div class="container-fluid">
+        <div class="background">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+        </div>
+        <header id="home" class="header">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#activity">Activity</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <section class="header-content" id="home">
+                <h1>Smart <img src = "images/home.png" width = "150px" height= "150px" alt="home"> Home</h1>
+                <br>
+                <h2>by Intranet of Titans</h2>
+                <a href="IoT_Project.pdf" target ="_blank"><img src="images/presentation.png" alt ="ppt" width ="50px" height="50px"></a>
+            </section>
+        </header>
+    </div>
+    <main>
+        <section class="about" id="about">
+            <h1>
+                About
+            </h1>
+            <table style="border-collapse: collapse;">
+                <tr>
+                    <th>Team Name</th>
+                    <td>Intranet of Titans</td>
+                </tr>
+                <tr>
+                    <th>Project Name</th>
+                    <td>Smart Home</td>
+                </tr>
+                <tr>
+                    <th>Project Description</th>
+                    <td>Our Smart Home involves in controlling electrical appliances, monitoring temperature and humidity, detecting water level, <br>allowing cars automatically using ultrasonic sensor and so on..</td>
+                </tr>
+                <tr>
+                    <th rowspan="5">Team Members</th>
+                <tr>
+                    <td>1. Penumalla Aditya Pavani (2021101133)</td>
+                </tr>
+                <tr>
+                    <td>2. Kadali Lakshmi Nirmala (2021101126)</td>
+                </tr>
+                <tr>
+                    <td>3. Abhinay Maurya (2021101132)</td>
+                </tr>
+                    <td>4. Vempati Siva Koti Reddy (2021101135)</td>
+                </tr>
+                <tr>
+                    <th>News and Updates</th>
+                    <td>
+                        <ul id="update">
+                            <li>start updating</li>
+                        </ul>
+                        <input type="text" id="updating">
+                        <button onclick="updating()">update</button>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <br>
+        <section class="activity" id="activity">
+            <h1>
+                Activity
+            </h1>
+            <div>
+                <h2>Control Lights</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <a href="https://0a84-2401-4900-4944-f937-8d5d-818d-22b6-4def.in.ngrok.io/"><img src="images/lightbulb.png" alt ="led" width="50px" height="50px"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h2>Know Temperature and Humidity</h2>
+                <table>
+                    <tr>
+                        <td>
+                            <a href="https://thingspeak.com/channels/1757885" target="_blank"><img src="images/ts.png" alt ="Thingspeak" width="50px" height="50px"></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <br>
+        <section class="contact" id="contact">
+            <h2>
+                Contact
+            </h2>
+            <div class="container">
+                <form>
+
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name.." required />
+
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required />
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email" required />
+
+                    <input type="radio" id="male" name="gender" value="male"> Male
+                    <input type="radio" id="female" name="gender" value="female"> Female
+                    <br>
+                    <br>
+                    <label for="country">Course</label>
+                    <select id="course" name="course">
+                        <option value="csx">CSX</option>
+                        <option value="ecx">ECX</option>
+                    </select>
+
+                    <label for="subject">Message</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+
+                    <input type="submit" value="Submit">
+
+                </form>
+                <h4>
+                    <span>&#9993;</span>
+                    Contact us:
+                </h4>
+                <ul class="contact">
+                    <li>
+                        <a href="mailto:aditya.pavani@students.iiit.ac.in"><i class="fa fa-gmail fa-lg fa-fw"
+                                style="color:#080808">aditya.pavani@students.iiit.ac.in</i></a>
+                    </li>
+                    <li>
+                        <a href="mailto:kadali.nirmala@students.iiit.ac.in"><i class="fa fa-gmail fa-lg fa-fw"
+                                style="color:#080808">kadali.nirmala@students.iiit.ac.in</i></a>
+                    </li>
+                    <li>
+                        <a href="mailto:abhinay.maurya@students.iiit.ac.in"><i class="fa fa-gmail fa-lg fa-fw"
+                                style="color:#080808">abhinay.maurya@students.iiit.ac.in</i></a>
+                    </li>
+                    <li>
+                        <a href="mailto:vempati.reddy@students.iiit.ac.in"><i class="fa fa-gmail fa-lg fa-fw"
+                                style="color:#080808">vempati.reddy@students.iiit.ac.in</i></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <footer class="footer">
+            <p>We &#10084; Smart Homes</p>
+        </footer>
+    </main>
+</body>
+
+</html>
